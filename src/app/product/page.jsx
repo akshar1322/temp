@@ -10,6 +10,7 @@ const ProductDetail = () => {
   const { id } = router.query; // Get the product ID from the URL
 
   useEffect(() => {
+    document.title = 'Prodcts';
     setIsClient(true); // Set to true once the component is mounted on the client
   }, []);
 

@@ -8,6 +8,7 @@ const WishlistPage = () => {
 
   // Fetch wishlist items from localStorage
   useEffect(() => {
+    document.title = 'Prodct Wishlist';
     const storedWishlist = JSON.parse(localStorage.getItem('wishlist')) || [];
     setWishlistItems(storedWishlist);
   }, []);

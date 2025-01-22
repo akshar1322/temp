@@ -1,9 +1,14 @@
-// pages/dashboard.js
+'use client';
+
 import React from 'react';
+import { useEffect } from 'react';
 import { products } from '@/data/productdetail';
 import ProductCard from '@/components/cards/ProductCard';
 import SideNav from '@/components/section/SideNav';
 
+useEffect(() => {
+  document.title = 'Admin |Dashboard';
+}, []);
 export default function Dashboard() {
   return (
     <div className="flex">

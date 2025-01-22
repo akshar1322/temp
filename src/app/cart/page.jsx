@@ -8,6 +8,7 @@ const CartPage = () => {
 
   // Fetch cart items from localStorage
   useEffect(() => {
+    document.title = 'ProdctCard';
     const storedCart = JSON.parse(localStorage.getItem('cart')) || [];
     setCartItems(storedCart);
   }, []);
